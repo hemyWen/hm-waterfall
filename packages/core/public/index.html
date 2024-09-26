@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+  </head>
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .root {
+      width: 100%;
+      height: 100vh;
+    }
+
+    .list {
+      width: 100%;
+      height: 100%;
+      background-color: #eee;
+    }
+    .text-info {
+      padding: 12px;
+      font-size: 14px;
+    }
+    .info {
+      font-size: 14px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+    }
+    .text {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      line-clamp: 2;
+      -webkit-box-orient: vertical;
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 10px;
+      letter-spacing: 0;
+    }
+    .back-top-btn {
+      position: fixed;
+      right: 40px;
+      bottom: 40px;
+      cursor: pointer;
+      transition: transform 0.15s;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background-color: #00b5f7;
+      font-size: 24px;
+      color: #fff;
+    }
+  </style>
+  <body>
+    <div id="app">
+      <div class="root">
+        <div class="list"></div>
+      </div>
+    </div>
+  </body>
+</html>

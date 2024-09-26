@@ -1,0 +1,41 @@
+{
+  "name": "hm-waterfall",
+  "version": "1.0.1",
+  "private": false,
+  "description": "waterfall瀑布流,支持响应式,虚拟列表,支持ts/js/vue/vue3/react",
+  "keywords": [
+    "typescript",
+    "waterfall",
+    "js",
+    "ts",
+    "响应式",
+    "虚拟列表",
+    "瀑布流"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hemyWen/hemy-waterfall.git"
+  },
+  "main": "dist/hmWaterfall.js",
+  "types": "dist/types/waterfall.d.ts",
+  "files": [
+    "dist/*"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": " webpack-dev-server  --mode=development --config webpack.config.js --open",
+    "build": "webpack --mode=production --config webpack.config.js"
+  },
+  "author": "hemyWen",
+  "license": "MIT",
+  "devDependencies": {
+    "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.0",
+    "style-loader": "^4.0.0",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.5.4",
+    "webpack": "^5.94.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.1.0"
+  }
+}

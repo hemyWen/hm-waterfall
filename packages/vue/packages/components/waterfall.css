@@ -1,0 +1,56 @@
+.hm_waterfall-back-top {
+}
+
+.hm_waterfall-loading {
+  height: 32px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  transition: all 0.15s;
+}
+
+.hm_waterfall-container::-webkit-scrollbar {
+  width: 8px;
+  background-color: #eee;
+}
+.hm_waterfall-container::-webkit-scrollbar-thumb {
+  background-color: #bbb;
+  border-radius: 4px;
+}
+
+.hm_waterfall-container::-webkit-scrollbar-thumb:hover {
+  background-color: #aaa;
+}
+
+.hm_waterfall-container {
+  box-sizing: border-box;
+  padding: 20px;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.hm_container {
+  position: relative;
+  width: 100%;
+}
+
+.hm_waterfall-item {
+  position: absolute;
+  transition: all 0.12s;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.hm_waterfall-item-main {
+  flex-grow: 1;
+  flex-shrink: 0;
+}

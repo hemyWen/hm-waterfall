@@ -1,0 +1,22 @@
+{
+  "include": [
+    "packages/**/*"
+  ],
+  "compilerOptions": {
+    "composite": true,
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "baseUrl": ".",
+    "outDir": "./lib/",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    },
+    "declarationDir": "./lib/types/", // 声明文件打包的位置
+    "declaration": true /* Generate .d.ts files from TypeScript and JavaScript files in your project. */,
+    "declarationMap": false /* Create sourcemaps for d.ts files. */,
+    "emitDeclarationOnly": true, // 只输出声明文件(ts 产物)
+    "noEmitOnError": true,
+    "allowJs": true,
+  }
+}
