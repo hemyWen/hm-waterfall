@@ -37,6 +37,11 @@
 
 ## 文档
 
+```sh
+cd server
+json-server db.json --port 3000
+```
+
 - [JS/TS](https://github.com/hemyWen/hm-waterfall/tree/master/packages/core)
 - [React](https://github.com/hemyWen/hm-waterfall/tree/master/packages/react)
 - [Vue](https://github.com/hemyWen/hm-waterfall/tree/master/packages/vue)
