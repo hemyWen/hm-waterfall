@@ -23,7 +23,7 @@
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": " webpack-dev-server  --mode=development --config webpack.config.js --open",
+    "dev": "webpack-dev-server  --mode=development --config webpack.config.js --open",
     "build": "webpack --mode=production --config webpack.config.js"
   },
   "author": "hemyWen",

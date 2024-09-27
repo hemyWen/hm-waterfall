@@ -53,7 +53,7 @@ export default {
     },
     getData(page, pageSize) {
       return new Promise((resolve) => {
-        fetch(`http://localhost:5000/getwaterfall?page=${page}&pageSize=${pageSize}`)
+        fetch(`http://localhost:3000/posts?_page=${page}&_per_page=${pageSize}`)
           .then((response) => response.json())
           .then((data) => resolve(data.data))
       })
