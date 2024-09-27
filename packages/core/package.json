@@ -1,6 +1,6 @@
 {
   "name": "hm-waterfall",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": false,
   "description": "waterfall瀑布流,支持响应式,虚拟列表,支持ts/js/vue/vue3/react",
   "keywords": [
