@@ -1,18 +1,44 @@
 {
   "name": "@hm-waterfall/react",
-  "private": true,
-  "version": "0.0.0",
+  "version": "1.0.1",
+  "private": false,
+  "description": "waterfall list for React,React封装瀑布流虚拟列表组件,支持响应式",
   "type": "module",
+  "author": "hemyWen",
+  "license": "MIT",
+  "main": "lib/hm-waterfall.umd.js",
+  "module": "lib/hm-waterfall.es.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/*"
+  ],
+  "keywords": [
+    "virtualList",
+    "waterfall",
+    "javascript",
+    "typescript",
+    "瀑布流",
+    "虚拟列表"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hemyWen/hm-waterfall.git"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
     "@types/node": "^22.7.2",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "vite-plugin-css-injected-by-js": "^3.5.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",
@@ -25,6 +51,7 @@
     "globals": "^15.9.0",
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.0.1",
-    "vite": "^5.4.1"
+    "vite": "^5.4.1",
+    "vite-plugin-dts": "^4.2.2"
   }
 }

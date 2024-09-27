@@ -16,7 +16,7 @@ export default defineConfig({
     lib: {
       entry: path.resolve(__dirname, "./packages/index.ts"),
       name: "HmWaterfall",
-      fileName: (format) => `hmy-waterfall.${format}.js`,
+      fileName: (format) => `hm-waterfall.${format}.js`,
     },
     rollupOptions: {
       // 确保外部化处理那些你不想打包进库的依赖

@@ -16,7 +16,7 @@
   </div>
 </template>
 <script setup lang="ts">
-import type { IRenderItem } from "packages/components/type";
+import type { IRenderItem } from "../packages/components/type";
 import Waterfall from "../packages/components/Waterfall.vue";
 import { onMounted, ref } from "vue";
 const columnNum = ref<number>(2);

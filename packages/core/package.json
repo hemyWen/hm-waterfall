@@ -14,7 +14,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hemyWen/hemy-waterfall.git"
+    "url": "git+https://github.com/hemyWen/hm-waterfall.git"
   },
   "main": "dist/hmWaterfall.js",
   "types": "dist/types/waterfall.d.ts",

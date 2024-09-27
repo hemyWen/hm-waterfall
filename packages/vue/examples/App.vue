@@ -16,7 +16,7 @@
   </div>
 </template>
 <script>
-import Waterfall from '../packages/components/Waterfall.vue'
+import Waterfall from '@hm-waterfall/vue'
 export default {
   name: 'App',
   components: {

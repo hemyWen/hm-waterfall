@@ -1,6 +1,6 @@
 {
   "name": "@hm-waterfall/vue3",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
   "description": "waterfall list for vue3,vue3封装瀑布流虚拟列表组件,支持响应式",
   "type": "module",
@@ -19,6 +19,10 @@
     "瀑布流",
     "虚拟列表"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hemyWen/hm-waterfall.git"
+  },
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
