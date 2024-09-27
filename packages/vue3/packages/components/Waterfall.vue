@@ -29,6 +29,11 @@
     </div>
   </div>
 </template>
+<script lang="ts">
+export default {
+  name: "Waterfall",
+};
+</script>
 <script setup lang="ts">
 import { ref, computed, onMounted, nextTick, onUnmounted, toRaw, watch } from "vue";
 import type { ICardItem, IPosItem, IRenderItem, IWaterfallProps } from "./type";

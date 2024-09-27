@@ -1,14 +1,16 @@
 {
   "name": "@hm-waterfall/vue3",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": false,
   "description": "waterfall list for vue3,vue3封装瀑布流虚拟列表组件,支持响应式",
   "type": "module",
   "author": "hemyWen",
   "license": "MIT",
-  "main": "lib/hm-waterfall.umd.js",
+  "main": "dist/hm-waterfall.umd.js",
+  "module": "dist/hm-waterfall.es.js",
+  "types": "dist/index.d.ts",
   "files": [
-    "lib/*"
+    "dist/*"
   ],
   "keywords": [
     "virtualList",
@@ -36,6 +38,7 @@
   },
   "dependencies": {
     "vite-plugin-css-injected-by-js": "^3.5.1",
+    "vite-plugin-dts": "^4.2.2",
     "vue": "^3.4.29"
   },
   "devDependencies": {

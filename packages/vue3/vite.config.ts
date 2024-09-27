@@ -1,22 +1,30 @@
 import { fileURLToPath, URL } from "node:url";
-import path from "path";
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import cssInjectedByJsPlugin from "vite-plugin-css-injected-by-js";
+import dts from "vite-plugin-dts";
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue(), cssInjectedByJsPlugin()],
+  plugins: [
+    vue(),
+    cssInjectedByJsPlugin(),
+    dts({
+      insertTypesEntry: true, // 插入类型入口文件
+    }),
+  ],
   resolve: {
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
   },
   build: {
-    outDir: "lib",
+    outDir: "dist",
     lib: {
-      entry: path.resolve(__dirname, "./packages/index.ts"),
+      entry: "./packages/index.ts",
       name: "HmWaterfall",
       fileName: (format) => `hm-waterfall.${format}.js`,
+      // 打包格式
+      formats: ["es", "umd"],
     },
     rollupOptions: {
       // 确保外部化处理那些你不想打包进库的依赖
@@ -26,6 +34,7 @@ export default defineConfig({
         globals: {
           vue: "Vue",
         },
+        exports: "named",
       },
     },
   },
