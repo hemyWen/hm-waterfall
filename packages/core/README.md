@@ -56,9 +56,9 @@
 ##### 1.通过 cdn 引入
 
 ```js
-<script src="https://unpkg.com/hm-waterfall@1.0.0"></script>;
+<script src="https://unpkg.com/hm-waterfall@1.0.2"></script>;
 //or
-<script src="https://cdn.jsdelivr.net/npm/hm-waterfall@1.0.0"></script>;
+<script src="https://cdn.jsdelivr.net/npm/hm-waterfall@1.0.2"></script>;
 ```
 
 ```js
