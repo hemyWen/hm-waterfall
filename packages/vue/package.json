@@ -1,13 +1,13 @@
 {
   "name": "@hm-waterfall/vue",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
   "description": "waterfall list for vue,vue封装瀑布流虚拟列表组件,支持响应式",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hemyWen/hm-waterfall.git"
   },
-  "main": "lib/hm-waterfall.umd.js",
+  "main": "lib/hm-waterfall.umd.min.js",
   "files": [
     "lib/*"
   ],
@@ -29,7 +29,7 @@
   "scripts": {
     "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lib": "vue-cli-service build --target lib --name hm-waterfall --dest lib packages/index.js",
+    "lib": "vue-cli-service build --target lib packages/index.js --name hm-waterfall --dest lib ",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {

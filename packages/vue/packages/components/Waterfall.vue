@@ -17,7 +17,7 @@
             backgroundSize: '100% 100%'
           }"
         />
-        <div :ref="setFooterRef(item.idx)" :style="{ width: item.width + 'px' }">
+        <div :ref="'item_' + item.idx" :style="{ width: item.width + 'px' }">
           <slot :item="item" />
         </div>
       </div>
@@ -73,9 +73,7 @@ export default {
       isShowToTop: false,
       hasNextPage: true,
       resizeObserver: null,
-      lastOffsetWidth: 0,
-      footerSlotRefs: {},
-      footerHeight: {}
+      lastOffsetWidth: 0
     }
   },
   computed: {
@@ -197,8 +195,8 @@ export default {
         const param = {
           ...domItem
         }
-
-        const footer_height = this.footerSlotRefs[idx].offsetHeight
+        const footer_slot = this.$refs['item_' + idx]
+        const footer_height = footer_slot ? footer_slot[0].offsetHeight : 0
         const height = imageHeight + footer_height
         this.positionList.sort((a, b) => a.columnHeight - b.columnHeight)
         const minColumn = this.positionList[0]
@@ -264,13 +262,6 @@ export default {
     },
     cardClick(item) {
       this.$emit('on-card-click', item)
-    },
-    setFooterRef(idx) {
-      return (el) => {
-        if (el) {
-          this.footerSlotRefs[idx] = el
-        }
-      }
     }
   }
 }
