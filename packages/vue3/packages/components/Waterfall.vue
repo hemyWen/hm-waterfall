@@ -169,7 +169,7 @@ const setCardPos = (startIdx: number) => {
     const param: ICardItem = {
       ...domItem,
     };
-    const footer_height = slotRefs.value[idx].offsetHeight;
+    const footer_height = slotRefs.value[idx] ? slotRefs.value[idx].offsetHeight : 0;
     const height = imageHeight + footer_height;
     positionList.value.sort((a, b) => a.columnHeight - b.columnHeight);
     const minColumn = positionList.value[0];
