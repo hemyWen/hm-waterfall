@@ -25,7 +25,7 @@
       <tr>
         <td>Vue3</td>
         <td><a href='https://www.npmjs.com/package/@hm-waterfall/vue3'>@hm-waterfall/vue3</a></td>
-        <td>npm install @hm-waterfall/Vue3</td>
+        <td>npm install @hm-waterfall/vue3</td>
     </tr>
      <tr>
         <td>React</td>
